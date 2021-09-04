@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Codificando E Decodificando</title>
+</head>
+<body>
+    <form class="container">
+        <h1 class="titulo">Codificando e Descodificando seu Texto</h1>
+        <section class="escolha">
+            <select name="selecione" id="selecione">
+                <option value="metodo" disabled selected>Escolha sua opção</option>
+                <option value="caesar">Cifra de César</option>
+                <option value="base64">Base64</option>
+            </select>
+
+            <input class="ocultarIncremento" id="ocultarIncremento" type="number" placeholder="Escolha uma chave">
+            <div class="metodo">
+                <input checked type="radio" id="codificar" name="escolhaDeMetodo" value="codificar">
+                <label for="escolhaDeMetodo">Codificar</label>
+            </div>
+            <div class="metodo">
+                <input type="radio" id="decodificar" name="escolhaDeMetodo">
+                <label for="escolhaDeMetodo">Decodificar</label>
+            </div>
+        </section>
+
+        <section class="mensagem-usuario">
+            <textarea class="texto" id="escrever" name="texto-usuario" placeholder="Digite seu texto" rows="10"cols="33"></textarea>
+            <textarea class="texto" id="resultado" name="texto-usuario" rows="10" cols="33" readonly></textarea>
+        </section>
+        <button type="button" id="botao">Codificar</button>
+    </form>
+
+    <footer>
+
+        <div>
+            <p class="rodape"><a href="https://www.linkedin.com/in/lorena-zanferrari-7a60a9126/"><strong>Desenvolvido por Lorena Zanferrari</strong></a> ©Copyright 2021</p>
+        </div>
+
+    </footer>
+    <script src="index.js"></script>
+
+</body>
+</html>
